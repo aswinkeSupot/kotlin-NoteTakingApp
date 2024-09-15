@@ -35,9 +35,10 @@
 ```
 
 ## 5. Add Dependency for Navigation
-  Add dependency for Navigation in app level build.gradle.kts
   Reference URL - https://developer.android.com/jetpack/androidx/releases/navigation#declaring_dependencies
   ```
+Add dependency for Navigation in app level build.gradle.kts
+
   dependencies {
     // Navigation
     val nav_version = "2.7.7"
@@ -80,8 +81,10 @@
   ```
 
 ## 9. For Fixing the error - "Plugin [id: 'androidx.navigation.safeargs'] was not found in any of the following sources:"
-  Add dependency for Navigation in project level build.gradle.kts
+  
   ```
+Add dependency for Navigation in project level build.gradle.kts
+
   buildscript {
     repositories {
         google()
