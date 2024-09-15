@@ -1,6 +1,7 @@
 ## 1. Add dependency for room database in app level build.gradle.kts
   Reference URL - https://developer.android.com/jetpack/androidx/releases/room
 
+```
   dependencies {
      // Room Database
     val room_version = "2.6.1"
@@ -8,7 +9,7 @@
     // optional - Kotlin Extensions and Coroutines support for Room
     implementation("androidx.room:room-ktx:$room_version")
  }
-
+```
 ## 2. Add kapt plugin in app level build.gradle.kts
   plugins {
     id("kotlin-kapt")
