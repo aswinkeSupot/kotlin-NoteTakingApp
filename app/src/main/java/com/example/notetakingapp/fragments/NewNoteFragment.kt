@@ -37,6 +37,10 @@ class NewNoteFragment : Fragment(R.layout.fragment_new_note) {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         _binding = FragmentNewNoteBinding.inflate(inflater, container,false)
+
+        // Set up Toolbar as the ActionBar in the Fragment
+        (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
+
         return binding.root
     }
 

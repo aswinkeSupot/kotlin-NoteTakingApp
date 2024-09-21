@@ -8,10 +8,23 @@
         android:layout_height="match_parent"
         tools:context=".fragments.NewNoteFragment">
 
+        <!-- Add Toolbar here -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Journal List"
+            app:titleTextColor="@android:color/white" />
+
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_margin="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
@@ -22,7 +35,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
             <LinearLayout
                 android:layout_width="match_parent"

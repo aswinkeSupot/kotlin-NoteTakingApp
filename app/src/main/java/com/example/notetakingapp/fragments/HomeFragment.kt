@@ -37,6 +37,10 @@ class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextLis
         // Inflate the layout for this fragment
 
         _binding = FragmentHomeBinding.inflate(inflater, container,false)
+
+        // Set up Toolbar as the ActionBar in the Fragment
+        (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
+
         return binding.root
     }
 
